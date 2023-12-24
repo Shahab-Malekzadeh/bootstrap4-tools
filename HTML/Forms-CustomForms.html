@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark pt-1 pb-1">
+
+  <ul class="navbar-nav" style="position: absolute;">
+      <li class="nav-item">
+        <a class="nav-link " href="../home.html"><i class="fas fa-home"></i> Home</a>
+      </li>
+  </ul>
+
+  <div class="container d-flex flex-wrap justify-content-center">
+
+    <ul class="navbar-nav small d-flex flex-wrap justify-content-center">
+      <li class="nav-item border border-secondary">
+        <a class="nav-link " href="Alerts-Cards.html">Alerts &<br>Cards</a>
+      </li>
+      <li class="nav-item border border-secondary">
+        <a class="nav-link" href="Badges-ProgressBars.html">Badges &<br>ProgressBars</a>
+      </li>
+      <li class="nav-item border border-secondary">
+        <a class="nav-link" href="Buttons-ButtonGroup.html">Buttons &<br>ButtonGroup</a>
+      </li>
+      <li class="nav-item border border-secondary">
+        <a class="nav-link" href="Carousel-Filters.html">Carousel<br>& Filters</a>
+      </li>
+      <li class="nav-item border border-secondary">
+        <a class="nav-link" href="Colors-Tables.html">Colors<br>& Tables</a>
+      </li>
+      <li class="nav-item border border-secondary">
+        <a class="nav-link" href="Container-Grid.html">Container<br>& Grid</a>
+      </li>
+      <li class="nav-item border border-secondary">
+        <a class="nav-link" href="Dropdowns-Collapse.html">Dropdowns<br>& Collapse</a>
+      </li>
+      <li class="nav-item border border-secondary">
+        <a class="nav-link" href="Flex.html">Flex</a>
+      </li>
+      <li class="nav-item border border-secondary active">
+        <a class="nav-link" href="Forms-CustomForms.html">Forms &<br>CustomForms</a>
+      </li>
+      <li class="nav-item border border-secondary">
+        <a class="nav-link" href="Icons.html">Icons</a>
+      </li>
+      <li class="nav-item border border-secondary">
+        <a class="nav-link" href="Images-Jumbotron.html">Images &<br>Jumbotron</a>
+      </li>
+    </ul>
+    <ul class="navbar-nav small d-flex flex-wrap justify-content-center">
+      <li class="nav-item border border-secondary">
+        <a class="nav-link" href="Inputs-InputGroups.html">Inputs &<br>InputGroups</a>
+      </li>
+      <li class="nav-item border border-secondary">
+        <a class="nav-link" href="ListGroups-MediaObjects.html">ListGroups &<br>MediaObjects</a>
+      </li>
+      <li class="nav-item border border-secondary">
+        <a class="nav-link" href="Modal-Tooltip.html">Modal &<br>Tooltip</a>
+      </li>
+      <li class="nav-item border border-secondary">
+        <a class="nav-link" href="Navs-Navbar.html">Navs &<br>Navbar</a>
+      </li>
+      <li class="nav-item border border-secondary">
+        <a class="nav-link" href="Popover-Toast.html">Popover<br>& Toast</a>
+      </li>
+      <li class="nav-item border border-secondary">
+        <a class="nav-link" href="Scrollspy1.html">Scrollspy 1</a>
+      </li>
+      <li class="nav-item border border-secondary">
+        <a class="nav-link" href="Scrollspy2.html">Scrollspy 2</a>
+      </li>
+      <li class="nav-item border border-secondary">
+        <a class="nav-link" href="Spinners-Pagination.html">Spiners &<br>Pagination</a>
+      </li>
+      <li class="nav-item border border-secondary">
+        <a class="nav-link" href="Typography.html">Typography</a>
+      </li>
+      <li class="nav-item border border-secondary">
+        <a class="nav-link" href="Utilities.html">Utilities</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="spacer" style="height: 50px;"></div>
+
+<div class="container">
+  <h2>Stacked form</h2>
+  <form action="/action_page.php">
+    <div class="form-group">
+      <label for="email1">Email:</label>
+      <input type="email" class="form-control" id="email1" placeholder="Enter email" name="email">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd1" placeholder="Enter password" name="pswd">
+    </div>
+    <div class="form-group form-check">
+      <label class="form-check-label">
+        <input class="form-check-input" type="checkbox" name="remember"> Remember me
+      </label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+
+<!--=================================================================================================-->
+<hr style="width:90%; margin-top: 50px; margin-bottom: 50px; background-color: aquamarine;">
+<!--=================================================================================================-->
+
+<div class="container">
+  <h2>Inline form</h2>
+  <p>Make the viewport larger than 576px wide to see that all of the form elements are inline and left-aligned. On small screens, the form groups will stack horizontally.</p>
+  <form class="form-inline" action="/action_page.php">
+    <label for="email2">Email:</label>
+    <input type="email" class="form-control" id="email2" placeholder="Enter email" name="email">
+    <label for="pwd">Password:</label>
+    <input type="password" class="form-control" id="pwd2" placeholder="Enter password" name="pswd">
+    <div class="form-check">
+      <label class="form-check-label">
+        <input class="form-check-input" type="checkbox" name="remember"> Remember me
+      </label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+
+<!--=================================================================================================-->
+<hr style="width:90%; margin-top: 50px; margin-bottom: 50px; background-color: aquamarine;">
+<!--=================================================================================================-->
+
+<div class="container">
+  <h2>Inline form</h2>
+  <p>Make the viewport larger than 576px wide to see that all of the form elements are inline and left-aligned. On small screens, the form groups will stack horizontally.</p>
+  <form class="form-inline" action="/action_page.php">
+    <label for="email2" class="mb-2 mr-sm-2">Email:</label>
+    <input type="text" class="form-control mb-2 mr-sm-2" id="email3" placeholder="Enter email" name="email">
+    <label for="pwd2" class="mb-2 mr-sm-2">Password:</label>
+    <input type="text" class="form-control mb-2 mr-sm-2" id="pwd3" placeholder="Enter password" name="pswd">
+    <div class="form-check mb-2 mr-sm-2">
+      <label class="form-check-label">
+        <input type="checkbox" class="form-check-input" name="remember"> Remember me
+      </label>
+    </div>    
+    <button type="submit" class="btn btn-primary mb-2">Submit</button>
+  </form>
+</div>
+
+<!--=================================================================================================-->
+<hr style="width:90%; margin-top: 50px; margin-bottom: 50px; background-color: aquamarine;">
+<!--=================================================================================================-->
+
+<div class="container">
+  <h2>Form Grid</h2>
+  <p>Create two form elements that appear side by side with .row and .col:</p>
+  <form action="/action_page.php">
+    <div class="row">
+      <div class="col">
+        <input type="text" class="form-control" id="email4" placeholder="Enter email" name="email">
+      </div>
+      <div class="col">
+        <input type="password" class="form-control" placeholder="Enter password" name="pswd">
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary mt-3">Submit</button>
+  </form>
+</div>
+
+<!--=================================================================================================-->
+<hr style="width:90%; margin-top: 50px; margin-bottom: 50px; background-color: aquamarine;">
+<!--=================================================================================================-->
+
+<div class="container">
+  <h2>Form Row/Grid</h2>
+  <p>In this example we will demonstrate the differences between .row and .form-row.</p>
+  <p>Create two form elements that appear side by side with .row and .col:</p>
+  <form>
+    <div class="row">
+      <div class="col">
+        <input type="text" class="form-control" id="email5" placeholder="Enter email" name="email">
+      </div>
+      <div class="col">
+        <input type="password" class="form-control" placeholder="Enter password" name="pswd">
+      </div>
+    </div>
+  </form>
+  <br>
+  
+  <p>Create two form elements that appear side by side with .form-row and .col:</p>
+  <form>
+    <div class="form-row">
+      <div class="col">
+        <input type="text" class="form-control" id="email6" placeholder="Enter email" name="email">
+      </div>
+      <div class="col">
+        <input type="password" class="form-control" placeholder="Enter password" name="pswd">
+      </div>
+    </div>
+  </form>
+</div>
+
+<!--=================================================================================================-->
+<hr style="width:90%; margin-top: 50px; margin-bottom: 50px; background-color: aquamarine;">
+<!--=================================================================================================-->
+
+<div class="container">
+  <h2>Form Validation</h2>
+  <p>In this example, we use <code>.was-validated</code> to indicate what's missing before submitting the form:</p>
+  <form action="/action_page.php" class="was-validated">
+    <div class="form-group">
+      <label for="uname">Username:</label>
+      <input type="text" class="form-control" id="uname1" placeholder="Enter username" name="uname" required>
+      <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Please fill out this field.</div>
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd4" placeholder="Enter password" name="pswd" required>
+      <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Please fill out this field.</div>
+    </div>
+    <div class="form-group form-check">
+      <label class="form-check-label">
+        <input class="form-check-input" type="checkbox" name="remember" required> I agree on blabla.
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Check this checkbox to continue.</div>
+      </label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+
+<!--=================================================================================================-->
+<hr style="width:90%; margin-top: 50px; margin-bottom: 50px; background-color: aquamarine;">
+<!--=================================================================================================-->
+
+<div class="container">
+  <h2>Form Validation</h2>
+  <p>In this example, we use <code>.needs-validation</code>, which will add the validation effect AFTER the form has been submitting (if there's anything missing).</p>
+  <p>Try to submit this form before filling out the input fields, to see the effect.</p>
+  <form action="/action_page.php" class="needs-validation" novalidate>
+    <div class="form-group">
+      <label for="uname">Username:</label>
+      <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
+      <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Please fill out this field.</div>
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+      <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Please fill out this field.</div>
+    </div>
+    <div class="form-group form-check">
+      <label class="form-check-label">
+        <input class="form-check-input" type="checkbox" name="remember" required> I agree on blabla.
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Check this checkbox to continue.</div>
+      </label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+
+<script>
+// Disable form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Get the forms we want to add validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+</script>
+
+<!--=================================================================================================-->
+<hr style="width:90%; margin-top: 50px; margin-bottom: 50px; background-color: aquamarine;">
+<!--=================================================================================================-->
+
+<div class="container mt-3">
+  <h2>Custom Checkbox</h2>
+  <p>To create a custom checkbox, wrap a container element, like div, with a class of .custom-control and .custom-checkbox around the checkbox. Then add the .custom-control-input to the checkbox.</p>
+  <p><strong>Tip:</strong> If you use labels for accompanying text, add the .custom-control-label class to it. Note that the value of the for attribute should match the id of the checkbox:</p>
+  <form action="/action_page.php">
+    <div class="custom-control custom-checkbox mb-3">
+      <input type="checkbox" class="custom-control-input" id="customCheck" name="example1">
+      <label class="custom-control-label" for="customCheck">Custom checkbox</label>
+    </div>
+    <input type="checkbox" id="defaultCheck" name="example2">
+    <label for="defaultCheck">Default checkbox</label>
+    <br>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+
+<!--=================================================================================================-->
+<hr style="width:90%; margin-top: 50px; margin-bottom: 50px; background-color: aquamarine;">
+<!--=================================================================================================-->
+
+<div class="container">
+  <h2>Custom Switch</h2>
+  <p>To create a custom "toggle switch", wrap a container element, like div, with a class of .custom-control and .custom-switch around a checkbox. Then add the .custom-control-input class to the checkbox:</p>                                     
+  <form action="/action_page.php">
+    <div class="custom-control custom-switch">
+      <input type="checkbox" class="custom-control-input" id="switch1" name="example">
+      <label class="custom-control-label" for="switch1">Toggle me</label>
+    </div>
+    <br>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+
+<!--=================================================================================================-->
+<hr style="width:90%; margin-top: 50px; margin-bottom: 50px; background-color: aquamarine;">
+<!--=================================================================================================-->
+
+<div class="container mt-3">
+  <h2>Custom Radio Buttons</h2>
+  <p>To create a custom radio button, wrap a container element, like div, with a class of .custom-control and .custom-radio around the radio button. Then add the .custom-control-input to the radio button.</p>
+  <p><strong>Tip:</strong> If you use labels for accompanying text, add the .custom-control-label class to it. Note that the value of the for attribute should match the id of the radio:</p>
+  <form action="/action_page.php">
+    <div class="custom-control custom-radio">
+      <input type="radio" class="custom-control-input" id="customRadio" name="example1">
+      <label class="custom-control-label" for="customRadio">Custom radio</label>
+    </div>    
+    <input type="radio" id="defaultRadio" name="example2">
+    <label for="defaultRadio">Default radio</label>
+    <br>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+
+<!--=================================================================================================-->
+<hr style="width:90%; margin-top: 50px; margin-bottom: 50px; background-color: aquamarine;">
+<!--=================================================================================================-->
+
+<div class="container mt-3">
+  <h2>Inline Custom Form Controls</h2>
+  <p>If you want the custom form controls to sit side by side (inline), add the .custom-control-inline to the wrapper/container:</p>
+  <form action="/action_page.php">
+    <div class="custom-control custom-radio custom-control-inline">
+      <input type="radio" class="custom-control-input" id="customRadio1" name="example1">
+      <label class="custom-control-label" for="customRadio1">Custom radio</label>
+    </div>
+    <div class="custom-control custom-radio custom-control-inline">
+      <input type="radio" class="custom-control-input" id="customRadio2" name="example2">
+      <label class="custom-control-label" for="customRadio2">Custom radio</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+
+<!--=================================================================================================-->
+<hr style="width:90%; margin-top: 50px; margin-bottom: 50px; background-color: aquamarine;">
+<!--=================================================================================================-->
+
+<div class="container mt-3">
+  <h2>Custom Select Menu</h2>
+  <p>To create a custom select menu, add the .custom-select class to the select element:</p>
+  <form action="/action_page.php">
+    <select name="cars" class="custom-select mb-3">
+      <option selected>Custom Select Menu</option>
+      <option value="volvo">Volvo</option>
+      <option value="fiat">Fiat</option>
+      <option value="audi">Audi</option>
+    </select>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+
+<!--=================================================================================================-->
+<hr style="width:90%; margin-top: 50px; margin-bottom: 50px; background-color: aquamarine;">
+<!--=================================================================================================-->
+
+<div class="container mt-3">
+  <h2>Custom Select Menu Sizing</h2>
+  <p>Use the .custom-select-sm class to create a small select menu and the .custom-select-lg class for a large one:</p>
+  <form>
+    <select class="custom-select custom-select-sm mb-3">
+      <option selected>Small Custom Select Menu</option>
+      <option value="volvo">Volvo</option>
+      <option value="fiat">Fiat</option>
+      <option value="audi">Audi</option>
+    </select>
+    <select name="cars" class="custom-select mb-3">
+      <option selected>Default Custom Select Menu</option>
+      <option value="volvo">Volvo</option>
+      <option value="fiat">Fiat</option>
+      <option value="audi">Audi</option>
+    </select>
+    <select name="cars" class="custom-select custom-select-lg mb-3">
+      <option selected>Large Custom Select Menu</option>
+      <option value="volvo">Volvo</option>
+      <option value="fiat">Fiat</option>
+      <option value="audi">Audi</option>
+    </select>
+  </form>
+</div>
+
+<!--=================================================================================================-->
+<hr style="width:90%; margin-top: 50px; margin-bottom: 50px; background-color: aquamarine;">
+<!--=================================================================================================-->
+
+<div class="container mt-3">
+  <h2>Custom Range</h2>
+  <p>To create a custom range menu, add the .custom-range class to the input element with type="range":</p>
+  <form action="/action_page.php">
+    <label for="customRange">Custom range</label>
+    <input type="range" class="custom-range" id="customRange" name="points1">
+    <label for="defaultRange">Default range</label>
+    <input type="range" id="defaultRange" name="points2">
+    <p><button type="submit" class="btn btn-primary">Submit</button></p>
+  </form>
+</div>
+
+<!--=================================================================================================-->
+<hr style="width:90%; margin-top: 50px; margin-bottom: 50px; background-color: aquamarine;">
+<!--=================================================================================================-->
+
+<div class="container mt-3">
+  <h2>Custom File</h2>
+  <p>To create a custom file upload, wrap a container element with a class of .custom-file around the input with type="file". Then add the .custom-file-input to the file input:</p>
+  <form action="/action_page.php">
+    <p>Custom file:</p>
+    <div class="custom-file mb-3">
+      <input type="file" class="custom-file-input" id="customFile" name="filename">
+      <label class="custom-file-label" for="customFile">Choose file</label>
+    </div>
+    
+    <p>Default file:</p>
+    <input type="file" id="myFile" name="filename2">
+  
+    <div class="mt-3">
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </form>
+</div>
+
+<!--=================================================================================================-->
+<hr style="width:90%; margin-top: 50px; margin-bottom: 50px; background-color: aquamarine;">
+<!--=================================================================================================-->
+
+</body>
+</html>

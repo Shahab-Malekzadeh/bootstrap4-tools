@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark pt-1 pb-1">
+
+  <ul class="navbar-nav" style="position: absolute;">
+      <li class="nav-item">
+        <a class="nav-link " href="../home.html"><i class="fas fa-home"></i> Home</a>
+      </li>
+  </ul>
+
+  <div class="container d-flex flex-wrap justify-content-center">
+
+    <ul class="navbar-nav small d-flex flex-wrap justify-content-center">
+      <li class="nav-item border border-secondary">
+        <a class="nav-link " href="Alerts-Cards.html">Alerts &<br>Cards</a>
+      </li>
+      <li class="nav-item border border-secondary">
+        <a class="nav-link" href="Badges-ProgressBars.html">Badges &<br>ProgressBars</a>
+      </li>
+      <li class="nav-item border border-secondary">
+        <a class="nav-link" href="Buttons-ButtonGroup.html">Buttons &<br>ButtonGroup</a>
+      </li>
+      <li class="nav-item border border-secondary">
+        <a class="nav-link" href="Carousel-Filters.html">Carousel<br>& Filters</a>
+      </li>
+      <li class="nav-item border border-secondary active">
+        <a class="nav-link" href="Colors-Tables.html">Colors<br>& Tables</a>
+      </li>
+      <li class="nav-item border border-secondary">
+        <a class="nav-link" href="Container-Grid.html">Container<br>& Grid</a>
+      </li>
+      <li class="nav-item border border-secondary">
+        <a class="nav-link" href="Dropdowns-Collapse.html">Dropdowns<br>& Collapse</a>
+      </li>
+      <li class="nav-item border border-secondary">
+        <a class="nav-link" href="Flex.html">Flex</a>
+      </li>
+      <li class="nav-item border border-secondary">
+        <a class="nav-link" href="Forms-CustomForms.html">Forms &<br>CustomForms</a>
+      </li>
+      <li class="nav-item border border-secondary">
+        <a class="nav-link" href="Icons.html">Icons</a>
+      </li>
+      <li class="nav-item border border-secondary">
+        <a class="nav-link" href="Images-Jumbotron.html">Images &<br>Jumbotron</a>
+      </li>
+    </ul>
+    <ul class="navbar-nav small d-flex flex-wrap justify-content-center">
+      <li class="nav-item border border-secondary">
+        <a class="nav-link" href="Inputs-InputGroups.html">Inputs &<br>InputGroups</a>
+      </li>
+      <li class="nav-item border border-secondary">
+        <a class="nav-link" href="ListGroups-MediaObjects.html">ListGroups &<br>MediaObjects</a>
+      </li>
+      <li class="nav-item border border-secondary">
+        <a class="nav-link" href="Modal-Tooltip.html">Modal &<br>Tooltip</a>
+      </li>
+      <li class="nav-item border border-secondary">
+        <a class="nav-link" href="Navs-Navbar.html">Navs &<br>Navbar</a>
+      </li>
+      <li class="nav-item border border-secondary">
+        <a class="nav-link" href="Popover-Toast.html">Popover<br>& Toast</a>
+      </li>
+      <li class="nav-item border border-secondary">
+        <a class="nav-link" href="Scrollspy1.html">Scrollspy 1</a>
+      </li>
+      <li class="nav-item border border-secondary">
+        <a class="nav-link" href="Scrollspy2.html">Scrollspy 2</a>
+      </li>
+      <li class="nav-item border border-secondary">
+        <a class="nav-link" href="Spinners-Pagination.html">Spiners &<br>Pagination</a>
+      </li>
+      <li class="nav-item border border-secondary">
+        <a class="nav-link" href="Typography.html">Typography</a>
+      </li>
+      <li class="nav-item border border-secondary">
+        <a class="nav-link" href="Utilities.html">Utilities</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="spacer" style="height: 50px;"></div>
+
+<div class="container">
+  <h2>Contextual Colors</h2>
+  <p>Use the contextual classes to provide "meaning through colors":</p>
+  <p class="text-muted">This text is muted.</p>
+  <p class="text-primary">This text is important.</p>
+  <p class="text-success">This text indicates success.</p>
+  <p class="text-info">This text represents some information.</p>
+  <p class="text-warning">This text represents a warning.</p>
+  <p class="text-danger">This text represents danger.</p>
+  <p class="text-secondary">Secondary text.</p>
+  <p class="text-dark">This text is dark grey.</p>
+  <p class="text-body">Default body color (often black).</p>
+  <p class="text-light">This text is light grey (on white background).</p>
+  <p class="text-white">This text is white (on white background).</p>
+</div>
+
+<!--=================================================================================================-->
+<hr style="width:90%; margin-top: 50px; margin-bottom: 50px; background-color: aquamarine;">
+<!--=================================================================================================-->
+
+<div class="container">
+  <h2>Contextual Link Colors</h2>
+  <p>Hover over the links.</p>
+  <a href="#" class="text-muted">Muted link.</a>
+  <a href="#" class="text-primary">Primary link.</a>
+  <a href="#" class="text-success">Success link.</a>
+  <a href="#" class="text-info">Info link.</a>
+  <a href="#" class="text-warning">Warning link.</a>
+  <a href="#" class="text-danger">Danger link.</a>
+  <a href="#" class="text-secondary">Secondary link.</a>
+  <a href="#" class="text-dark">Dark grey link.</a>
+  <a href="#" class="text-body">Body/black link.</a>
+  <a href="#" class="text-light">Light grey link.</a>
+</div>
+
+<!--=================================================================================================-->
+<hr style="width:90%; margin-top: 50px; margin-bottom: 50px; background-color: aquamarine;">
+<!--=================================================================================================-->
+
+<div class="container">
+  <h2>Opacity Text Colors</h2>
+  <p>Add 50% opacity for black or white text with the .text-black-50 or .text-white-50 classes:</p>
+  <p class="text-black-50">Black text with 50% opacity on white background</p>
+  <p class="text-white-50 bg-dark">White text with 50% opacity on black background</p>
+</div>
+
+<!--=================================================================================================-->
+<hr style="width:90%; margin-top: 50px; margin-bottom: 50px; background-color: aquamarine;">
+<!--=================================================================================================-->
+
+<div class="container">
+  <h2>Contextual Backgrounds</h2>
+  <p>Use the contextual background classes to provide "meaning through colors".</p>
+  <p>Note that you can also add a .text-* class if you want a different text color:</p>
+  <p class="bg-primary text-white">This text is important.</p>
+  <p class="bg-success text-white">This text indicates success.</p>
+  <p class="bg-info text-white">This text represents some information.</p>
+  <p class="bg-warning text-white">This text represents a warning.</p>
+  <p class="bg-danger text-white">This text represents danger.</p>
+  <p class="bg-secondary text-white">Secondary background color.</p>
+  <p class="bg-dark text-white">Dark grey background color.</p>
+  <p class="bg-light text-dark">Light grey background color.</p>
+</div>
+
+<!--=================================================================================================-->
+<hr style="width:90%; margin-top: 50px; margin-bottom: 50px; background-color: aquamarine;">
+<!--=================================================================================================-->
+
+<div class="container">
+  <h2>Basic Table</h2>
+  <p>The .table class adds basic styling (light padding and horizontal dividers) to a table:</p>            
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!--=================================================================================================-->
+<hr style="width:90%; margin-top: 50px; margin-bottom: 50px; background-color: aquamarine;">
+<!--=================================================================================================-->
+
+<div class="container">
+  <h2>Striped Rows</h2>
+  <p>The .table-striped class adds zebra-stripes to a table:</p>            
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!--=================================================================================================-->
+<hr style="width:90%; margin-top: 50px; margin-bottom: 50px; background-color: aquamarine;">
+<!--=================================================================================================-->
+
+<div class="container">
+  <h2>Bordered Table</h2>
+  <p>The .table-bordered class adds borders on all sides of the table and the cells:</p>            
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!--=================================================================================================-->
+<hr style="width:90%; margin-top: 50px; margin-bottom: 50px; background-color: aquamarine;">
+<!--=================================================================================================-->
+
+<div class="container">
+  <h2>Hover Rows</h2>
+  <p>The .table-hover class enables a hover state (grey background on mouse over) on table rows:</p>            
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!--=================================================================================================-->
+<hr style="width:90%; margin-top: 50px; margin-bottom: 50px; background-color: aquamarine;">
+<!--=================================================================================================-->
+
+<div class="container">
+  <h2>Black/Dark Table</h2>
+  <p>The .table-dark class adds a black background to the table:</p>            
+  <table class="table table-dark">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!--=================================================================================================-->
+<hr style="width:90%; margin-top: 50px; margin-bottom: 50px; background-color: aquamarine;">
+<!--=================================================================================================-->
+
+<div class="container">
+  <h2>Dark Striped Table</h2>
+  <p>Combine .table-dark and .table-striped to create a dark, striped table:</p>            
+  <table class="table table-dark table-striped">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!--=================================================================================================-->
+<hr style="width:90%; margin-top: 50px; margin-bottom: 50px; background-color: aquamarine;">
+<!--=================================================================================================-->
+
+<div class="container">
+  <h2>Hoverable Dark Table</h2>
+  <p>The .table-hover class adds a hover effect (grey background color) on table rows:</p>            
+  <table class="table table-dark table-hover">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!--=================================================================================================-->
+<hr style="width:90%; margin-top: 50px; margin-bottom: 50px; background-color: aquamarine;">
+<!--=================================================================================================-->
+
+<div class="container">
+  <h2>Borderless Table</h2>
+  <p>The .table-borderless class removes borders from the table:</p>            
+  <table class="table table-borderless">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!--=================================================================================================-->
+<hr style="width:90%; margin-top: 50px; margin-bottom: 50px; background-color: aquamarine;">
+<!--=================================================================================================-->
+
+<div class="container">
+  <h2>Contextual Classes</h2>
+  <p>Contextual classes can be used to color the table, table rows or table cells. The classes that can be used are: .table-primary, .table-success, .table-info, .table-warning, .table-danger, .table-active, .table-secondary, .table-light and .table-dark:</p>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Default</td>
+        <td>Defaultson</td>
+        <td>def@somemail.com</td>
+      </tr>      
+      <tr class="table-primary">
+        <td>Primary</td>
+        <td>Joe</td>
+        <td>joe@example.com</td>
+      </tr>
+      <tr class="table-success">
+        <td>Success</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr class="table-danger">
+        <td>Danger</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+      </tr>
+      <tr class="table-info">
+        <td>Info</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+      </tr>
+      <tr class="table-warning">
+        <td>Warning</td>
+        <td>Refs</td>
+        <td>bo@example.com</td>
+      </tr>
+      <tr class="table-active">
+        <td>Active</td>
+        <td>Activeson</td>
+        <td>act@example.com</td>
+      </tr>
+      <tr class="table-secondary">
+        <td>Secondary</td>
+        <td>Secondson</td>
+        <td>sec@example.com</td>
+      </tr>
+      <tr class="table-light">
+        <td>Light</td>
+        <td>Angie</td>
+        <td>angie@example.com</td>
+      </tr>
+      <tr class="table-dark text-dark">
+        <td>Dark</td>
+        <td>Bo</td>
+        <td>bo@example.com</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!--=================================================================================================-->
+<hr style="width:90%; margin-top: 50px; margin-bottom: 50px; background-color: aquamarine;">
+<!--=================================================================================================-->
+
+<div class="container">
+  <h2>Table Head Colors</h2>
+  <p>The .thead-dark class adds a black background to table headers, and the .thead-light class adds a grey background to table headers:</p>
+  <table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+      </tr>
+    </tbody>
+  </table>
+  <table class="table">
+    <thead class="thead-light">
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!--=================================================================================================-->
+<hr style="width:90%; margin-top: 50px; margin-bottom: 50px; background-color: aquamarine;">
+<!--=================================================================================================-->
+
+<div class="container">
+  <h2>Small Table</h2>
+  <p>The .table-sm class makes the table smaller by cutting cell padding in half:</p>
+  <table class="table table-bordered table-sm">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!--=================================================================================================-->
+<hr style="width:90%; margin-top: 50px; margin-bottom: 50px; background-color: aquamarine;">
+<!--=================================================================================================-->
+
+<div class="container">
+  <h2>Responsive Table</h2>
+  <p>The .table-responsive class adds a scrollbar to the table when needed:</p>                                                                                      
+  
+  <div class="table-responsive">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Age</th>
+          <th>City</th>
+          <th>Country</th>
+          <th>Sex</th>
+          <th>Example</th>
+          <th>Example</th>
+          <th>Example</th>
+          <th>Example</th>
+          <th>Example</th>
+          <th>Example</th>
+          <th>Example</th>
+          <th>Example</th>
+          <th>Example</th>
+          <th>Example</th>
+          <th>Example</th>
+          <th>Example</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Anna</td>
+          <td>Pitt</td>
+          <td>35</td>
+          <td>New York</td>
+          <td>USA</td>
+          <td>Female</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!--=================================================================================================-->
+<hr style="width:90%; margin-top: 50px; margin-bottom: 50px; background-color: aquamarine;">
+<!--=================================================================================================-->
+
+<div class="container">
+  <h2>Responsive Table</h2>
+  <p>The .table-responsive-sm class creates a responsive table which will scroll horizontally on screens that are less than 576px wide.</p>                                                                                      
+  <p>Resize the browser window to see the effect.</p>
+  <div class="table-responsive-sm">          
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Age</th>
+        <th>City</th>
+        <th>Country</th>
+        <th>Sex</th>
+        <th>Example</th>
+        <th>Example</th>
+        <th>Example</th>
+        <th>Example</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Anna</td>
+        <td>Pitt</td>
+        <td>35</td>
+        <td>New York</td>
+        <td>USA</td>
+        <td>Female</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+</div>
+
+<!--=================================================================================================-->
+<hr style="width:90%; margin-top: 50px; margin-bottom: 50px; background-color: aquamarine;">
+<!--=================================================================================================-->
+
+<div class="container mt-3">
+  <h2>Display Table</h2>
+  <p>Use the d-table, d-table-row and d-table-cell to make elements display as tables:</p>
+  <div class="d-table" style="width:100%">
+    <div class="d-table-row" style="width:100%">
+
+  	  <div class="d-table-cell">
+  	  	<h4>Left Cell</h4>
+  	  	<p>Some text..</p>
+  	  </div>
+
+  	  <div class="d-table-cell">
+  	  	<h4>Middle Cell</h4>
+  	  	<p>Some text..</p>
+    	</div>
+
+  	  <div class="d-table-cell">
+      	<h4>Right Cell</h4>
+  	  	<p>Some text..</p>
+  	  </div>
+
+	  </div>
+  </div>
+</div>
+
+<!--=================================================================================================-->
+<hr style="width:90%; margin-top: 50px; margin-bottom: 50px; background-color: aquamarine;">
+<!--=================================================================================================-->
+
+<div class="container mt-3">
+  <h2>Display Table Responsive</h2>
+  <p>Use the d-table, d-table-row and d-table-cell to make elements display as tables.</p>
+  <p>Use any of the sm, md, lg, xl classes (d-*-*) to make an element display as a table on different screen sizes.</p>
+  <p>Resize the browser window to see the effect.</p>
+
+  <h2>DIV as Table</h2>
+  <div class="d-table bg-warning" style="width:100%">
+    <div class="d-table-row" style="width:100%">
+
+  	  <div class="d-table-cell">
+  	  	<h4>Left Cell</h4>
+  	  	<p>Some text..</p>
+  	  </div>
+
+  	  <div class="d-table-cell">
+  	  	<h4>Middle Cell</h4>
+  	  	<p>Some text..</p>
+    	</div>
+
+  	  <div class="d-table-cell">
+      	<h4>Right Cell</h4>
+  	  	<p>Some text..</p>
+  	  </div>
+
+	  </div>
+  </div>
+  
+  <br>
+  <h2>Responsive Table</h2>
+  <div class="d-md-table bg-success" style="width:100%">
+    <div class="d-md-table-row" style="width:100%">
+
+  	  <div class="d-md-table-cell">
+  	  	<h4>Left Cell</h4>
+  	  	<p>Some text..</p>
+  	  </div>
+
+  	  <div class="d-md-table-cell">
+  	  	<h4>Middle Cell</h4>
+  	  	<p>Some text..</p>
+    	</div>
+
+  	  <div class="d-md-table-cell">
+      	<h4>Right Cell</h4>
+  	  	<p>Some text..</p>
+  	  </div>
+
+	  </div>
+  </div>
+
+</div>
+
+<!--=================================================================================================-->
+<hr style="width:90%; margin-top: 50px; margin-bottom: 50px; background-color: aquamarine;">
+<!--=================================================================================================-->
+
+</body>
+</html>

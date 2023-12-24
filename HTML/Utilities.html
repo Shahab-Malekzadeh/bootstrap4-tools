@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+  <style>
+  span.border {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    margin: 6px;
+  }
+  </style>
+
+  <style>
+  span {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    margin: 6px;
+    background-color: #555;
+  }
+  </style>
+  
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark pt-1 pb-1">
+
+  <ul class="navbar-nav" style="position: absolute;">
+      <li class="nav-item">
+        <a class="nav-link " href="../home.html"><i class="fas fa-home"></i> Home</a>
+      </li>
+  </ul>
+
+  <div class="container d-flex flex-wrap justify-content-center">
+
+    <ul class="navbar-nav d-flex flex-wrap small justify-content-center">
+      <li class="nav-item border border-secondary">
+        <a class="nav-link " href="Alerts-Cards.html">Alerts &<br>Cards</a>
+      </li>
+      <li class="nav-item border border-secondary">
+        <a class="nav-link" href="Badges-ProgressBars.html">Badges &<br>ProgressBars</a>
+      </li>
+      <li class="nav-item border border-secondary">
+        <a class="nav-link" href="Buttons-ButtonGroup.html">Buttons &<br>ButtonGroup</a>
+      </li>
+      <li class="nav-item border border-secondary">
+        <a class="nav-link" href="Carousel-Filters.html">Carousel<br>& Filters</a>
+      </li>
+      <li class="nav-item border border-secondary">
+        <a class="nav-link" href="Colors-Tables.html">Colors<br>& Tables</a>
+      </li>
+      <li class="nav-item border border-secondary">
+        <a class="nav-link" href="Container-Grid.html">Container<br>& Grid</a>
+      </li>
+      <li class="nav-item border border-secondary">
+        <a class="nav-link" href="Dropdowns-Collapse.html">Dropdowns<br>& Collapse</a>
+      </li>
+      <li class="nav-item border border-secondary">
+        <a class="nav-link" href="Flex.html">Flex</a>
+      </li>
+      <li class="nav-item border border-secondary">
+        <a class="nav-link" href="Forms-CustomForms.html">Forms &<br>CustomForms</a>
+      </li>
+      <li class="nav-item border border-secondary">
+        <a class="nav-link" href="Icons.html">Icons</a>
+      </li>
+      <li class="nav-item border border-secondary">
+        <a class="nav-link" href="Images-Jumbotron.html">Images &<br>Jumbotron</a>
+      </li>
+    </ul>
+    <ul class="navbar-nav small d-flex flex-wrap justify-content-center">
+      <li class="nav-item border border-secondary">
+        <a class="nav-link" href="Inputs-InputGroups.html">Inputs &<br>InputGroups</a>
+      </li>
+      <li class="nav-item border border-secondary">
+        <a class="nav-link" href="ListGroups-MediaObjects.html">ListGroups &<br>MediaObjects</a>
+      </li>
+      <li class="nav-item border border-secondary">
+        <a class="nav-link" href="Modal-Tooltip.html">Modal &<br>Tooltip</a>
+      </li>
+      <li class="nav-item border border-secondary">
+        <a class="nav-link" href="Navs-Navbar.html">Navs &<br>Navbar</a>
+      </li>
+      <li class="nav-item border border-secondary">
+        <a class="nav-link" href="Popover-Toast.html">Popover<br>& Toast</a>
+      </li>
+      <li class="nav-item border border-secondary">
+        <a class="nav-link" href="Scrollspy1.html">Scrollspy 1</a>
+      </li>
+      <li class="nav-item border border-secondary">
+        <a class="nav-link" href="Scrollspy2.html">Scrollspy 2</a>
+      </li>
+      <li class="nav-item border border-secondary">
+        <a class="nav-link" href="Spinners-Pagination.html">Spiners &<br>Pagination</a>
+      </li>
+      <li class="nav-item border border-secondary">
+        <a class="nav-link" href="Typography.html">Typography</a>
+      </li>
+      <li class="nav-item border border-secondary active">
+        <a class="nav-link" href="Utilities.html">Utilities</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="spacer" style="height: 50px;"></div>
+
+<div class="container">
+  <h2>Borders</h2>
+  <p>Use the border classes to add or remove borders from an element:</p> 
+  <span class="border"></span>
+  <span class="border border-0"></span>
+  <span class="border border-top-0"></span>
+  <span class="border border-right-0"></span>
+  <span class="border border-bottom-0"></span>
+  <span class="border border-left-0"></span>
+</div>
+
+<!--=================================================================================================-->
+<hr style="width:90%; margin-top: 50px; margin-bottom: 50px; background-color: aquamarine;">
+<!--=================================================================================================-->
+
+<div class="container">
+  <h2>Borders</h2>
+  <p>Use a contextual border color to add a color to the border:</p> 
+  <span class="border border-primary"></span>
+  <span class="border border-secondary"></span>
+  <span class="border border-success"></span>
+  <span class="border border-danger"></span>
+  <span class="border border-warning"></span>
+  <span class="border border-info"></span>
+  <span class="border border-light"></span>
+  <span class="border border-dark"></span>
+  <span class="border border-white"></span>
+</div>
+
+<!--=================================================================================================-->
+<hr style="width:90%; margin-top: 50px; margin-bottom: 50px; background-color: aquamarine;">
+<!--=================================================================================================-->
+
+<div class="container">
+  <h2>Borders</h2>
+  <p>Round the corner of an element with the rounded classes:</p> 
+  <span class="rounded-sm"></span>
+  <span class="rounded"></span>
+  <span class="rounded-lg"></span>
+  <span class="rounded-top"></span>
+  <span class="rounded-right"></span>
+  <span class="rounded-bottom"></span>
+  <span class="rounded-left"></span>
+  <span class="rounded-circle"></span>
+  <span class="rounded-0"></span>
+</div>
+
+<!--=================================================================================================-->
+<hr style="width:90%; margin-top: 50px; margin-bottom: 50px; background-color: aquamarine;">
+<!--=================================================================================================-->
+
+<div class="container">
+  <h2>Float</h2>
+  <p>Float an element to the right with the .float-right class or to the left with .float-left, and clear floats with the .clearfix class.</p> 
+  <div class="clearfix">
+    <span class="float-left">Float left</span>
+    <span class="float-right">Float right</span>
+  </div>
+</div>
+
+<!--=================================================================================================-->
+<hr style="width:90%; margin-top: 50px; margin-bottom: 50px; background-color: aquamarine;">
+<!--=================================================================================================-->
+
+<div class="container">
+  <h2>Responsive Floats</h2>
+  <p>Float an element to the left or to the right depending on screen width, with the responsive float classes .float-*-left|right (where * is sm, md, lg or xl).</p>
+  <p>Resize the browser window to see the effect.</p> 
+  <div class="clearfix">
+    <div class="float-sm-right">Float right on small screens or wider</div><br>
+    <div class="float-md-right">Float right on medium screens or wider</div><br>
+    <div class="float-lg-right">Float right on large screens or wider</div><br>
+    <div class="float-xl-right">Float right on extra large screens or wider</div><br>
+    <div class="float-none">Float none</div>
+  </div>
+</div>
+
+<!--=================================================================================================-->
+<hr style="width:90%; margin-top: 50px; margin-bottom: 50px; background-color: aquamarine;">
+<!--=================================================================================================-->
+
+<div class="container">
+  <h1>Horizontal Centering</h1>
+  <p>Center an element with the .mx-auto class:</p>
+  <div class="mx-auto bg-warning" style="width:150px">Centered</div>
+</div>
+
+<!--=================================================================================================-->
+<hr style="width:90%; margin-top: 50px; margin-bottom: 50px; background-color: aquamarine;">
+<!--=================================================================================================-->
+
+<div class="container">
+  <h1>Width Utilities</h1>
+  <p>Set the width of an element with the w-* classes:</p>
+  <div class="w-25 bg-warning">Width 25%</div>
+  <div class="w-50 bg-warning">Width 50%</div>
+  <div class="w-75 bg-warning">Width 75%</div>
+  <div class="w-100 bg-warning">Width 100%</div>
+  <div class="mw-100 bg-warning">Max Width 100%</div>
+</div>
+
+<!--=================================================================================================-->
+<hr style="width:90%; margin-top: 50px; margin-bottom: 50px; background-color: aquamarine;">
+<!--=================================================================================================-->
+
+<div class="container">
+  <h1>Height Utilities</h1>
+  <p>Set the height of an element with the w-* classes:</p>
+  <div style="height:200px;background-color:#ddd">
+    <div class="h-25 d-inline-block p-2 bg-warning">Height 25%</div>
+    <div class="h-50 d-inline-block p-2 bg-warning">Height 50%</div>
+    <div class="h-75 d-inline-block p-2 bg-warning">Height 75%</div>
+    <div class="h-100 d-inline-block p-2 bg-warning">Height 100%</div>
+    <div class="mh-100 d-inline-block p-2 bg-warning" style="height:500px">Max Height 100%</div>
+  </div>
+</div>
+
+<!--=================================================================================================-->
+<hr style="width:90%; margin-top: 50px; margin-bottom: 50px; background-color: aquamarine;">
+<!--=================================================================================================-->
+
+<div class="container">
+  <h1>Spacing Utilities</h1>
+  <p>Set the spacing of an element with the {property}{sides}-{breakpoint}-{size} classes. Omit breakpoint if you want the padding or margin to work on all screen sizes.</p>
+  <div class="pt-4 bg-warning">I only have a top padding (1.5rem = 24px)</div>
+  <div class="p-5 bg-success">I have a padding on all sides (3rem = 48px)</div>
+  <div class="m-5 pb-5 bg-info">I have a margin on all sides (3rem = 48px) and a bottom padding (3rem = 48px)</div>
+</div>
+
+<!--=================================================================================================-->
+<hr style="width:90%; margin-top: 50px; margin-bottom: 50px; background-color: aquamarine;">
+<!--=================================================================================================-->
+
+<div class="container">
+  <h1>Spacing Utilities</h1>
+  <p>Set the spacing of an element with the {property}{sides}-{breakpoint}-{size} classes. Omit breakpoint if you want the padding or margin to work on all screen sizes.</p>
+  <div class="pt-4 bg-warning">I only have a top padding (1.5rem = 24px)</div>
+  <div class="p-5 bg-success">I have a padding on all sides (3rem = 48px)</div>
+  <div class="m-5 pb-5 bg-info">I have a margin on all sides (3rem = 48px) and a bottom padding (3rem = 48px)</div>
+</div>
+
+<!--=================================================================================================-->
+<hr style="width:90%; margin-top: 50px; margin-bottom: 50px; background-color: aquamarine;">
+<!--=================================================================================================-->
+
+<div class="container">
+  <h1>Margin Top Utilities</h1>
+  <p>Margin Top utilities:</p>
+  <div class="mt-0 bg-warning">Margin Top 0</div>
+  <div class="mt-1 bg-warning">Margin Top 1</div>
+  <div class="mt-2 bg-warning">Margin Top 2</div>
+  <div class="mt-3 bg-warning">Margin Top 3</div>
+  <div class="mt-4 bg-warning">Margin Top 4</div>
+  <div class="mt-5 bg-warning">Margin Top 5</div>
+  <div class="mt-auto bg-warning" style="width:150px">Margin Top Auto</div>
+  <br>
+
+  <p>Responsive margin top utilities. Resize the browser window to see the effect:</p>
+  <div class="mt-sm-5 bg-warning">Margin Top 5 on SM screens</div>
+  <div class="mt-md-5 bg-warning">Margin Top 5 on MD screens</div>
+  <div class="mt-lg-5 bg-warning">Margin Top 5 on LG screens</div>
+  <div class="mt-xl-5 bg-warning">Margin Top 5 on XL screens</div>
+</div>
+
+<!--=================================================================================================-->
+<hr style="width:90%; margin-top: 50px; margin-bottom: 50px; background-color: aquamarine;">
+<!--=================================================================================================-->
+
+<div class="container">
+  <h1>Margin Bottom Utilities</h1>
+  <p>Margin Bottom utilities:</p>
+  <div class="mb-0 bg-warning">Margin Bottom 0</div>
+  <div class="mb-1 bg-warning">Margin Bottom 1</div>
+  <div class="mb-2 bg-warning">Margin Bottom 2</div>
+  <div class="mb-3 bg-warning">Margin Bottom 3</div>
+  <div class="mb-4 bg-warning">Margin Bottom 4</div>
+  <div class="mb-5 bg-warning">Margin Bottom 5</div>
+  <div class="mb-auto bg-warning" style="width:150px">Margin Bottom Auto</div>
+  <br>
+
+  <p>Responsive margin bottom utilities. Resize the browser window to see the effect:</p>
+  <div class="mb-sm-5 bg-warning">Margin Bottom 5 on SM screens</div>
+  <div class="mb-md-5 bg-warning">Margin Bottom 5 on MD screens</div>
+  <div class="mb-lg-5 bg-warning">Margin Bottom 5 on LG screens</div>
+  <div class="mb-xl-5 bg-warning">Margin Bottom 5 on XL screens</div>
+</div>
+
+<!--=================================================================================================-->
+<hr style="width:90%; margin-top: 50px; margin-bottom: 50px; background-color: aquamarine;">
+<!--=================================================================================================-->
+
+<div class="container">
+  <h1>Margin Left Utilities</h1>
+  <p>Margin Left utilities:</p>
+  <div class="ml-0 bg-warning">Margin Left 0</div>
+  <div class="ml-1 bg-warning">Margin Left 1</div>
+  <div class="ml-2 bg-warning">Margin Left 2</div>
+  <div class="ml-3 bg-warning">Margin Left 3</div>
+  <div class="ml-4 bg-warning">Margin Left 4</div>
+  <div class="ml-5 bg-warning">Margin Left 5</div>
+  <div class="ml-auto bg-warning" style="width:150px">Margin Left Auto</div>
+
+  <p>Responsive margin left utilities. Resize the browser window to see the effect:</p>
+  <div class="ml-sm-5 bg-warning">Margin Left 5 on SM screens</div>
+  <div class="ml-md-5 bg-warning">Margin Left 5 on MD screens</div>
+  <div class="ml-lg-5 bg-warning">Margin Left 5 on LG screens</div>
+  <div class="ml-xl-5 bg-warning">Margin Left 5 on XL screens</div>
+</div>
+
+<!--=================================================================================================-->
+<hr style="width:90%; margin-top: 50px; margin-bottom: 50px; background-color: aquamarine;">
+<!--=================================================================================================-->
+
+<div class="container">
+  <h1>Margin Right Utilities</h1>
+  <p>Margin Right utilities:</p>
+  <div class="mr-0 bg-warning">Margin Right 0</div>
+  <div class="mr-1 bg-warning">Margin Right 1</div>
+  <div class="mr-2 bg-warning">Margin Right 2</div>
+  <div class="mr-3 bg-warning">Margin Right 3</div>
+  <div class="mr-4 bg-warning">Margin Right 4</div>
+  <div class="mr-5 bg-warning">Margin Right 5</div>
+  <div class="mr-auto bg-warning" style="width:150px">Margin Right Auto</div>
+  <br>
+  
+  <p>Responsive margin left utilities. Resize the browser window to see the effect:</p>
+  <div class="mr-sm-5 bg-warning">Margin Right on SM screens</div>
+  <div class="mr-md-5 bg-warning">Margin Right on MD screens</div>
+  <div class="mr-lg-5 bg-warning">Margin Right on LG screens</div>
+  <div class="mr-xl-5 bg-warning">Margin Right on XL screens</div>
+</div>
+
+<!--=================================================================================================-->
+<hr style="width:90%; margin-top: 50px; margin-bottom: 50px; background-color: aquamarine;">
+<!--=================================================================================================-->
+
+<div class="container">
+  <h1>Margin Left and Right Utilities</h1>
+  <p>Margin X utilities:</p>
+  <div class="mx-0 bg-warning">Margin X 0</div>
+  <div class="mx-1 bg-warning">Margin X 1</div>
+  <div class="mx-2 bg-warning">Margin X 2</div>
+  <div class="mx-3 bg-warning">Margin X 3</div>
+  <div class="mx-4 bg-warning">Margin X 4</div>
+  <div class="mx-5 bg-warning">Margin X 5</div>
+  <div class="mx-auto bg-warning" style="width:150px">Margin X Auto</div>
+  <br>
+  
+  <p>Responsive margin x utilities. Resize the browser window to see the effect:</p>
+  <div class="mx-sm-5 bg-warning">Margin X 5 on SM screens</div>
+  <div class="mx-md-5 bg-warning">Margin X 5 on MD screens</div>
+  <div class="mx-lg-5 bg-warning">Margin X 5 on LG screens</div>
+  <div class="mx-xl-5 bg-warning">Margin X 5 on XL screens</div>
+</div>
+
+<!--=================================================================================================-->
+<hr style="width:90%; margin-top: 50px; margin-bottom: 50px; background-color: aquamarine;">
+<!--=================================================================================================-->
+
+<div class="container">
+  <h1>Margin Top and Bottom Utilities</h1>
+  <p>Margin Y utilities:</p>
+  <div class="my-0 bg-warning">Margin Y 0</div>
+  <div class="my-1 bg-warning">Margin Y 1</div>
+  <div class="my-2 bg-warning">Margin Y 2</div>
+  <div class="my-3 bg-warning">Margin Y 3</div>
+  <div class="my-4 bg-warning">Margin Y 4</div>
+  <div class="my-5 bg-warning">Margin Y 5</div>
+  <div class="my-auto bg-warning">Margin Y Auto</div>
+  <br>
+  
+  <p>Responsive margin y utilities. Resize the browser window to see the effect:</p>
+  <div class="my-sm-5 bg-warning">Margin Y 5 on SM screens</div>
+  <div class="my-md-5 bg-warning">Margin Y 5 on MD screens</div>
+  <div class="my-lg-5 bg-warning">Margin Y 5 on LG screens</div>
+  <div class="my-xl-5 bg-warning">Margin Y 5 on XL screens</div>
+</div>
+
+<!--=================================================================================================-->
+<hr style="width:90%; margin-top: 50px; margin-bottom: 50px; background-color: aquamarine;">
+<!--=================================================================================================-->
+
+<div class="container">
+  <h1>Padding Utilities</h1>
+  <p>Padding utilities:</p>
+  <div class="p-0 bg-warning">Padding 0</div>
+  <div class="p-1 bg-success">Padding 1</div>
+  <div class="p-2 bg-danger">Padding 2</div>
+  <div class="p-3 bg-primary">Padding 3</div>
+  <div class="p-4 bg-light">Padding 4</div>
+  <div class="p-5 bg-info">Padding 5</div>
+  <br>
+
+  <p>Responsive padding utilities. Resize the browser window to see the effect:</p>
+  <div class="p-sm-5 bg-warning">Padding 5 on SM screens</div>
+  <div class="p-md-5 bg-success">Padding 5 on MD screens</div>
+  <div class="p-lg-5 bg-danger">Padding 5 on LG screens</div>
+  <div class="p-xl-5 bg-primary">Padding 5 on XL screens</div>
+</div>
+
+<!--=================================================================================================-->
+<hr style="width:90%; margin-top: 50px; margin-bottom: 50px; background-color: aquamarine;">
+<!--=================================================================================================-->
+
+<div class="container">
+  <h1>Padding Top Utilities</h1>
+  <p>Padding top utilities:</p>
+  <div class="pt-0 bg-warning">Padding Top 0</div>
+  <div class="pt-1 bg-success">Padding Top 1</div>
+  <div class="pt-2 bg-danger">Padding Top 2</div>
+  <div class="pt-3 bg-primary">Padding Top 3</div>
+  <div class="pt-4 bg-light">Padding Top 4</div>
+  <div class="pt-5 bg-info">Padding Top 5</div>
+  <br>
+
+  <p>Responsive padding top utilities. Resize the browser window to see the effect:</p>
+  <div class="pt-sm-5 bg-warning">Padding Top 5 on SM screens</div>
+  <div class="pt-md-5 bg-success">Padding Top 5 on MD screens</div>
+  <div class="pt-lg-5 bg-danger">Padding Top 5 on LG screens</div>
+  <div class="pt-xl-5 bg-primary">Padding Top 5 on XL screens</div>
+</div>
+
+<!--=================================================================================================-->
+<hr style="width:90%; margin-top: 50px; margin-bottom: 50px; background-color: aquamarine;">
+<!--=================================================================================================-->
+
+<div class="container">
+  <h1>Padding Bottom Utilities</h1>
+  <p>Padding bottom utilities:</p>
+  <div class="pb-0 bg-warning">Padding Bottom 0</div>
+  <div class="pb-1 bg-success">Padding Bottom 1</div>
+  <div class="pb-2 bg-danger">Padding Bottom 2</div>
+  <div class="pb-3 bg-primary">Padding Bottom 3</div>
+  <div class="pb-4 bg-light">Padding Bottom 4</div>
+  <div class="pb-5 bg-info">Padding Bottom 5</div>
+  <br>
+
+  <p>Responsive padding bottom utilities. Resize the browser window to see the effect:</p>
+  <div class="pb-sm-5 bg-warning">Padding Bottom 5 on SM screens</div>
+  <div class="pb-md-5 bg-success">Padding Bottom 5 on MD screens</div>
+  <div class="pb-lg-5 bg-danger">Padding Bottom 5 on LG screens</div>
+  <div class="pb-xl-5 bg-primary">Padding Bottom 5 on XL screens</div>
+</div>
+
+<!--=================================================================================================-->
+<hr style="width:90%; margin-top: 50px; margin-bottom: 50px; background-color: aquamarine;">
+<!--=================================================================================================-->
+
+<div class="container">
+  <h1>Padding Left Utilities</h1>
+  <p>Padding left utilities:</p>
+  <div class="pl-0 bg-warning">Padding Left 0</div>
+  <div class="pl-1 bg-success">Padding Left 1</div>
+  <div class="pl-2 bg-danger">Padding Left 2</div>
+  <div class="pl-3 bg-primary">Padding Left 3</div>
+  <div class="pl-4 bg-light">Padding Left 4</div>
+  <div class="pl-5 bg-info">Padding Left 5</div>
+  <br>
+
+  <p>Responsive padding left utilities. Resize the browser window to see the effect:</p>
+  <div class="pl-sm-5 bg-warning">Padding Left 5 on SM screens</div>
+  <div class="pl-md-5 bg-success">Padding Left 5 on MD screens</div>
+  <div class="pl-lg-5 bg-danger">Padding Left 5 on LG screens</div>
+  <div class="pl-xl-5 bg-primary">Padding Left 5 on XL screens</div>
+</div>
+
+<!--=================================================================================================-->
+<hr style="width:90%; margin-top: 50px; margin-bottom: 50px; background-color: aquamarine;">
+<!--=================================================================================================-->
+
+<div class="container">
+  <h1>Padding Right Utilities</h1>
+  <p>Padding right utilities:</p>
+  <div class="pr-0 bg-warning text-right">Padding Right 0</div>
+  <div class="pr-1 bg-success text-right">Padding Right 1</div>
+  <div class="pr-2 bg-danger text-right">Padding Right 2</div>
+  <div class="pr-3 bg-primary text-right">Padding Right 3</div>
+  <div class="pr-4 bg-light text-right">Padding Right 4</div>
+  <div class="pr-5 bg-info text-right">Padding Right 5</div>
+  <br>
+
+  <p>Responsive padding right utilities. Resize the browser window to see the effect:</p>
+  <div class="pr-sm-5 bg-warning text-right">Padding Right 5 on SM screens</div>
+  <div class="pr-md-5 bg-success text-right">Padding Right 5 on MD screens</div>
+  <div class="pr-lg-5 bg-danger text-right">Padding Right 5 on LG screens</div>
+  <div class="pr-xl-5 bg-primary text-right">Padding Right 5 on XL screens</div>
+</div>
+
+<!--=================================================================================================-->
+<hr style="width:90%; margin-top: 50px; margin-bottom: 50px; background-color: aquamarine;">
+<!--=================================================================================================-->
+
+<div class="container">
+  <h1>Padding Top and Bottom Utilities</h1>
+  <p>Padding y utilities:</p>
+  <div class="py-0 bg-warning">Padding Y 0</div>
+  <div class="py-1 bg-success">Padding Y 1</div>
+  <div class="py-2 bg-danger">Padding Y 2</div>
+  <div class="py-3 bg-primary">Padding Y 3</div>
+  <div class="py-4 bg-light">Padding Y 4</div>
+  <div class="py-5 bg-info">Padding Y 5</div>
+  <br>
+
+  <p>Responsive padding y utilities. Resize the browser window to see the effect:</p>
+  <div class="py-sm-5 bg-warning">Padding Y 5 on SM screens</div>
+  <div class="py-md-5 bg-success">Padding Y 5 on MD screens</div>
+  <div class="py-lg-5 bg-danger">Padding Y 5 on LG screens</div>
+  <div class="py-xl-5 bg-primary">Padding Y 5 on XL screens</div>
+</div>
+
+<!--=================================================================================================-->
+<hr style="width:90%; margin-top: 50px; margin-bottom: 50px; background-color: aquamarine;">
+<!--=================================================================================================-->
+
+<div class="container">
+  <h1>Padding Left and Right Utilities</h1>
+  <p>Padding x utilities:</p>
+  <div class="px-0 bg-warning">Padding X 0</div>
+  <div class="px-1 bg-success">Padding X 1</div>
+  <div class="px-2 bg-danger">Padding X 2</div>
+  <div class="px-3 bg-primary">Padding X 3</div>
+  <div class="px-4 bg-light">Padding X 4</div>
+  <div class="px-5 bg-info">Padding X 5</div>
+  <br>
+
+  <p>Responsive padding x utilities. Resize the browser window to see the effect:</p>
+  <div class="px-sm-5 bg-warning">Padding X 5 on SM screens</div>
+  <div class="px-md-5 bg-success">Padding X 5 on MD screens</div>
+  <div class="px-lg-5 bg-danger">Padding X 5 on LG screens</div>
+  <div class="px-xl-5 bg-primary">Padding X 5 on XL screens</div>
+</div>
+
+<!--=================================================================================================-->
+<hr style="width:90%; margin-top: 50px; margin-bottom: 50px; background-color: aquamarine;">
+<!--=================================================================================================-->
+
+<div class="container">
+  <h1>Shadows</h1>
+  <p>Use the shadow- classes to to add shadows to an element:</p>
+  <div class="shadow-none p-4 mb-4 bg-light">No shadow</div>
+  <div class="shadow-sm p-4 mb-4 bg-white">Small shadow</div>
+  <div class="shadow p-4 mb-4 bg-white">Default shadow</div>
+  <div class="shadow-lg p-4 mb-4 bg-white">Large shadow</div>
+</div>
+
+<!--=================================================================================================-->
+<hr style="width:90%; margin-top: 50px; margin-bottom: 50px; background-color: aquamarine;">
+<!--=================================================================================================-->
+
+<div class="container">
+  <h1>Vertical Align</h1>
+  <p>Change the alignment of elements with the align classes (only works on inline, inline-block, inline-table and table cell elements):</p>
+  <span class="align-baseline">baseline</span>
+  <span class="align-top">top</span>
+  <span class="align-middle">middle</span>
+  <span class="align-bottom">bottom</span>
+  <span class="align-text-top">text-top</span>
+  <span class="align-text-bottom">text-bottom</span>
+</div>
+
+<!--=================================================================================================-->
+<hr style="width:90%; margin-top: 50px; margin-bottom: 50px; background-color: aquamarine;">
+<!--=================================================================================================-->
+
+<div class="container mt-3">
+  <h2>Responsive Embed</h2>
+  <p>Create a responsive video and scale it nicely to the parent element.</p>
+  
+  <h2>Aspect ratio 1:1</h2>
+  <div class="embed-responsive embed-responsive-1by1">
+    <iframe class="embed-responsive-item" src="../sources/watch dribbble.mp4"></iframe>
+  </div>
+  <br>
+  
+  <h2>Aspect ratio 4:3</h2>
+  <div class="embed-responsive embed-responsive-4by3">
+    <iframe class="embed-responsive-item" src="../sources/watch dribbble.mp4"></iframe>
+  </div> 
+  <br>
+  
+  <h2>Aspect ratio 16:9</h2>
+  <div class="embed-responsive embed-responsive-16by9">
+    <iframe class="embed-responsive-item" src="../sources/watch dribbble.mp4"></iframe>
+  </div>
+  <br>
+    
+  <h2>Aspect ratio 21:9</h2>
+  <div class="embed-responsive embed-responsive-21by9">
+    <iframe class="embed-responsive-item" src="../sources/watch dribbble.mp4"></iframe>
+  </div>
+</div>
+
+<!--=================================================================================================-->
+<hr style="width:90%; margin-top: 50px; margin-bottom: 50px; background-color: aquamarine;">
+<!--=================================================================================================-->
+
+<div class="container">
+  <h1>Visibility</h1>
+  <p>Use the .visible or .invisible classes to control the visibility of elements. Note: These classes do not change the CSS display value. They only add visibility:visible or visibility:hidden to an element:</p>
+  <div class="visible bg-success">I am visible</div>
+  <div class="invisible bg-warning">I am invisible</div>
+</div>
+
+<!--=================================================================================================-->
+<hr style="width:90%; margin-top: 50px; margin-bottom: 50px; background-color: aquamarine;">
+<!--=================================================================================================-->
+
+<div class="container">
+  <h1>Close Icon</h1>
+  <p>Use the .close class to style a close icon. This is often used for alerts and modals. Note that we use the times; symbol to create the actual icon (a better lookiong "x"). Also note that it is right-aligned by default:</p>
+  <div class="clearfix">
+    <button type="button" class="close">&times;</button>
+  </div>
+</div>
+
+<!--=================================================================================================-->
+<hr style="width:90%; margin-top: 50px; margin-bottom: 50px; background-color: aquamarine;">
+<!--=================================================================================================-->
+
+<div class="container mt-3">
+  <h2>Screen readers</h2>
+  <p>Use the .sr-only class to hide an element on all devices, except screen readers:</p>
+  <span class="sr-only">I will be hidden on all screens except for screen readers.</span>
+</div>
+
+<!--=================================================================================================-->
+<hr style="width:90%; margin-top: 50px; margin-bottom: 50px; background-color: aquamarine;">
+<!--=================================================================================================-->
+
+<div class="container mt-3">
+  <h2>Display Utilities</h2>
+  <p>To create a block element, add the d-block class. Use any of the d-*-block classes to control WHEN the element should be a block element on a specific screen width.</p>
+  <p>Resize the browser window to see the effect.</p>
+  <span class="d-block bg-success">d-block</span>
+  <span class="d-sm-block bg-success">d-sm-block</span>
+  <span class="d-md-block bg-success">d-md-block</span>
+  <span class="d-lg-block bg-success">d-lg-block</span>
+  <span class="d-xl-block bg-success">d-xl-block</span>
+</div>
+
+<!--=================================================================================================-->
+<hr style="width:90%; margin-top: 50px; margin-bottom: 50px; background-color: aquamarine;">
+<!--=================================================================================================-->
+
+<div class="container mt-3">
+  <h2>Display None</h2>
+  <p>Use the d-none class to hide an element.</p>
+  <div class="d-none">Hidden DIV</div>
+  <p class="d-none">Hidden P</p>
+</div>
+
+<!--=================================================================================================-->
+<hr style="width:90%; margin-top: 50px; margin-bottom: 50px; background-color: aquamarine;">
+<!--=================================================================================================-->
+
+<div class="container mt-3">
+  <h2>Display None Responsive</h2>
+  <p>Use the d-none class to hide an element. Use any of the d-*-none classes to control WHEN the element should be hidden on a specific screen width.</p>
+  <p>Resize the browser window to see the effect.</p>
+  <div class="d-none bg-success">Hidden DIV</div>
+  <div class="d-sm-none bg-success">d-sm-none</div>
+  <div class="d-md-none bg-success">d-md-none</div>
+  <div class="d-lg-none bg-success">d-lg-none</div>
+  <div class="d-none bg-success">d-xl-none</div>
+</div>
+
+<!--=================================================================================================-->
+<hr style="width:90%; margin-top: 50px; margin-bottom: 50px; background-color: aquamarine;">
+<!--=================================================================================================-->
+
+<div class="container mt-3">
+  <h2>Display Inline</h2>
+  <p>Use the d-inline class to make an element display inline.</p>
+  <div class="d-inline">Inline DIV.</div>
+  <p class="d-inline">Inline P.</p>
+</div>
+
+<!--=================================================================================================-->
+<hr style="width:90%; margin-top: 50px; margin-bottom: 50px; background-color: aquamarine;">
+<!--=================================================================================================-->
+
+<div class="container mt-3">
+  <h2>Display Inline Responsive</h2>
+  <p>Use the d-inline class to make an element display inline. Use any of the d-*-inline classes to control WHEN the element should be inline on a specific screen width.</p>
+  <p>Resize the browser window to see the effect.</p>
+  <div class="d-inline bg-success">Inline DIV</div>
+  <div class="d-sm-inline bg-success">d-sm-inline</div>
+  <div class="d-md-inline bg-success">d-md-inline</div>
+  <div class="d-lg-inline bg-success">d-lg-inline</div>
+  <div class="d-inline bg-success">d-xl-inline</div>
+</div>
+
+<!--=================================================================================================-->
+<hr style="width:90%; margin-top: 50px; margin-bottom: 50px; background-color: aquamarine;">
+<!--=================================================================================================-->
+
+<div class="container mt-3">
+  <h2>Display Inline Block</h2>
+  <p>Use the d-inline-block class to make an element display inline block.</p>
+  <div class="d-inline-block">Inline block DIV.</div>
+  <div class="d-inline-block">Inline block DIV.</div>
+</div>
+
+<!--=================================================================================================-->
+<hr style="width:90%; margin-top: 50px; margin-bottom: 50px; background-color: aquamarine;">
+<!--=================================================================================================-->
+
+<div class="container mt-3">
+  <h2>Display Inline Block Responsive</h2>
+  <p>Use the d-inline-block class to make an element display inline block. Use any of the d-*-inline-block classes to control WHEN the element should be inline block on a specific screen width.</p>
+  <p>Resize the browser window to see the effect.</p>
+  <div class="d-inline-block bg-success">Inline block DIV</div>
+  <div class="d-sm-inline-block bg-success">d-sm-inline-block</div>
+  <div class="d-md-inline-block bg-success">d-md-inline-block</div>
+  <div class="d-lg-inline-block bg-success">d-lg-inline-block</div>
+  <div class="d-inline-block bg-success">d-xl-inline-block</div>
+</div>
+
+<!--=================================================================================================-->
+<hr style="width:90%; margin-top: 50px; margin-bottom: 50px; background-color: aquamarine;">
+<!--=================================================================================================-->
+
+</body>
+</html>

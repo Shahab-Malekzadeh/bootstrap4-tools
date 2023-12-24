@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark pt-1 pb-1">
+
+  <ul class="navbar-nav" style="position: absolute;">
+      <li class="nav-item">
+        <a class="nav-link " href="../home.html"><i class="fas fa-home"></i> Home</a>
+      </li>
+  </ul>
+
+  <div class="container d-flex flex-wrap justify-content-center">
+
+    <ul class="navbar-nav small d-flex flex-wrap justify-content-center">
+      <li class="nav-item border border-secondary">
+        <a class="nav-link " href="Alerts-Cards.html">Alerts &<br>Cards</a>
+      </li>
+      <li class="nav-item border border-secondary">
+        <a class="nav-link" href="Badges-ProgressBars.html">Badges &<br>ProgressBars</a>
+      </li>
+      <li class="nav-item border border-secondary">
+        <a class="nav-link" href="Buttons-ButtonGroup.html">Buttons &<br>ButtonGroup</a>
+      </li>
+      <li class="nav-item border border-secondary">
+        <a class="nav-link" href="Carousel-Filters.html">Carousel<br>& Filters</a>
+      </li>
+      <li class="nav-item border border-secondary">
+        <a class="nav-link" href="Colors-Tables.html">Colors<br>& Tables</a>
+      </li>
+      <li class="nav-item border border-secondary">
+        <a class="nav-link" href="Container-Grid.html">Container<br>& Grid</a>
+      </li>
+      <li class="nav-item border border-secondary">
+        <a class="nav-link" href="Dropdowns-Collapse.html">Dropdowns<br>& Collapse</a>
+      </li>
+      <li class="nav-item border border-secondary">
+        <a class="nav-link" href="Flex.html">Flex</a>
+      </li>
+      <li class="nav-item border border-secondary">
+        <a class="nav-link" href="Forms-CustomForms.html">Forms &<br>CustomForms</a>
+      </li>
+      <li class="nav-item border border-secondary">
+        <a class="nav-link" href="Icons.html">Icons</a>
+      </li>
+      <li class="nav-item border border-secondary">
+        <a class="nav-link" href="Images-Jumbotron.html">Images &<br>Jumbotron</a>
+      </li>
+    </ul>
+    <ul class="navbar-nav small d-flex flex-wrap justify-content-center">
+      <li class="nav-item border border-secondary">
+        <a class="nav-link" href="Inputs-InputGroups.html">Inputs &<br>InputGroups</a>
+      </li>
+      <li class="nav-item border border-secondary">
+        <a class="nav-link" href="ListGroups-MediaObjects.html">ListGroups &<br>MediaObjects</a>
+      </li>
+      <li class="nav-item border border-secondary active">
+        <a class="nav-link" href="Modal-Tooltip.html">Modal &<br>Tooltip</a>
+      </li>
+      <li class="nav-item border border-secondary">
+        <a class="nav-link" href="Navs-Navbar.html">Navs &<br>Navbar</a>
+      </li>
+      <li class="nav-item border border-secondary">
+        <a class="nav-link" href="Popover-Toast.html">Popover<br>& Toast</a>
+      </li>
+      <li class="nav-item border border-secondary">
+        <a class="nav-link" href="Scrollspy1.html">Scrollspy 1</a>
+      </li>
+      <li class="nav-item border border-secondary">
+        <a class="nav-link" href="Scrollspy2.html">Scrollspy 2</a>
+      </li>
+      <li class="nav-item border border-secondary">
+        <a class="nav-link" href="Spinners-Pagination.html">Spiners &<br>Pagination</a>
+      </li>
+      <li class="nav-item border border-secondary">
+        <a class="nav-link" href="Typography.html">Typography</a>
+      </li>
+      <li class="nav-item border border-secondary">
+        <a class="nav-link" href="Utilities.html">Utilities</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="spacer" style="height: 50px;"></div>
+
+<div class="container">
+  <h2>Modal Example</h2>
+  <!-- Button to Open the Modal -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal1">
+    Open modal
+  </button>
+
+  <!-- The Modal -->
+  <div class="modal" id="myModal1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Modal Heading</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          Modal body..
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+<!--=================================================================================================-->
+<hr style="width:90%; margin-top: 50px; margin-bottom: 50px; background-color: aquamarine;">
+<!--=================================================================================================-->
+
+<div class="container">
+  <h2>Fading Modal</h2>
+  <p>Add the "fade" class to the modal container if you want the modal to fade in on open and fade out on close.</p>
+
+  <!-- Button to Open the Modal -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal2">
+    Open modal
+  </button>
+
+  <!-- The Modal -->
+  <div class="modal fade" id="myModal2">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Modal Heading</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          Modal body..
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+<!--=================================================================================================-->
+<hr style="width:90%; margin-top: 50px; margin-bottom: 50px; background-color: aquamarine;">
+<!--=================================================================================================-->
+
+<div class="container">
+  <h2>Small Modal</h2>
+  <!-- Button to Open the Modal -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal3">
+    Open modal
+  </button>
+
+  <!-- The Modal -->
+  <div class="modal fade" id="myModal3">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Modal Heading</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          Modal body..
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+<!--=================================================================================================-->
+<hr style="width:90%; margin-top: 50px; margin-bottom: 50px; background-color: aquamarine;">
+<!--=================================================================================================-->
+
+<div class="container">
+  <h2>Large Modal</h2>
+  <!-- Button to Open the Modal -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal4">
+    Open modal
+  </button>
+
+  <!-- The Modal -->
+  <div class="modal fade" id="myModal4">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Modal Heading</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          Modal body..
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+<!--=================================================================================================-->
+<hr style="width:90%; margin-top: 50px; margin-bottom: 50px; background-color: aquamarine;">
+<!--=================================================================================================-->
+
+<div class="container">
+  <h2>Extra Large Modal</h2>
+  <!-- Button to Open the Modal -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal5">
+    Open modal
+  </button>
+
+  <!-- The Modal -->
+  <div class="modal fade" id="myModal5">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Modal Heading</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          Modal body..
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+<!--=================================================================================================-->
+<hr style="width:90%; margin-top: 50px; margin-bottom: 50px; background-color: aquamarine;">
+<!--=================================================================================================-->
+
+<div class="container">
+  <h2>Centered Modal Example</h2>
+  <p>Center the modal vertically and horizontally within the page, with the .modal-dialog-centered class.</p>
+  <!-- Button to Open the Modal -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal6">
+    Open modal
+  </button>
+
+  <!-- The Modal -->
+  <div class="modal fade" id="myModal6">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Modal Heading</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          Modal body..
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+<!--=================================================================================================-->
+<hr style="width:90%; margin-top: 50px; margin-bottom: 50px; background-color: aquamarine;">
+<!--=================================================================================================-->
+
+<div class="container">
+  <h2>Modal Scroll Example</h2>
+  <!-- Button to Open the Modal -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal7">
+    Open modal
+  </button>
+
+  <!-- The Modal -->
+  <div class="modal" id="myModal7">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h1 class="modal-title">Modal Heading</h1>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <h3>Some text to enable scrolling..</h3>
+          <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+          <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+<!--=================================================================================================-->
+<hr style="width:90%; margin-top: 50px; margin-bottom: 50px; background-color: aquamarine;">
+<!--=================================================================================================-->
+
+<div class="container">
+  <h2>Modal Scroll Example</h2>
+  <p>Use the .modal-dialog-scrollable class to enable scrolling inside the modal.</p>
+  <!-- Button to Open the Modal -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal8">
+    Open modal
+  </button>
+
+  <!-- The Modal -->
+  <div class="modal" id="myModal8">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h1 class="modal-title">Modal Heading</h1>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <h3>Some text to enable scrolling..</h3>
+          <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+          <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+<!--=================================================================================================-->
+<hr style="width:90%; margin-top: 50px; margin-bottom: 50px; background-color: aquamarine;">
+<!--=================================================================================================-->
+
+<div class="container">
+  <h3>Tooltip Example</h3>
+  <a href="#" data-toggle="tooltip" title="Hooray!">Hover over me</a>
+</div>
+
+<script>
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();   
+});
+</script>
+
+<!--=================================================================================================-->
+<hr style="width:90%; margin-top: 50px; margin-bottom: 50px; background-color: aquamarine;">
+<!--=================================================================================================-->
+
+<div class="container">
+  <h3>Tooltip Example</h3>
+  <p>The data-placement attribute specifies the tooltip position.</p>
+  <a href="#" data-toggle="tooltip" data-placement="top" title="Hooray!">Top</a>
+  <a href="#" data-toggle="tooltip" data-placement="bottom" title="Hooray!">Bottom</a>
+  <a href="#" data-toggle="tooltip" data-placement="left" title="Hooray!">Left</a>
+  <a href="#" data-toggle="tooltip" data-placement="right" title="Hooray!">Right</a>
+</div>
+
+<script>
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();   
+});
+</script>
+
+<!--=================================================================================================-->
+<hr style="width:90%; margin-top: 50px; margin-bottom: 50px; background-color: aquamarine;">
+<!--=================================================================================================-->
+
+</body>
+</html>

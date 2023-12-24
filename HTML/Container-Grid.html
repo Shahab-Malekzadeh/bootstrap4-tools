@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark pt-1 pb-1">
+
+  <ul class="navbar-nav" style="position: absolute;">
+      <li class="nav-item">
+        <a class="nav-link " href="../home.html"><i class="fas fa-home"></i> Home</a>
+      </li>
+  </ul>
+
+  <div class="container d-flex flex-wrap justify-content-center">
+
+    <ul class="navbar-nav small d-flex flex-wrap justify-content-center">
+      <li class="nav-item border border-secondary">
+        <a class="nav-link " href="Alerts-Cards.html">Alerts &<br>Cards</a>
+      </li>
+      <li class="nav-item border border-secondary">
+        <a class="nav-link" href="Badges-ProgressBars.html">Badges &<br>ProgressBars</a>
+      </li>
+      <li class="nav-item border border-secondary">
+        <a class="nav-link" href="Buttons-ButtonGroup.html">Buttons &<br>ButtonGroup</a>
+      </li>
+      <li class="nav-item border border-secondary">
+        <a class="nav-link" href="Carousel-Filters.html">Carousel<br>& Filters</a>
+      </li>
+      <li class="nav-item border border-secondary">
+        <a class="nav-link" href="Colors-Tables.html">Colors<br>& Tables</a>
+      </li>
+      <li class="nav-item border border-secondary active">
+        <a class="nav-link" href="Container-Grid.html">Container<br>& Grid</a>
+      </li>
+      <li class="nav-item border border-secondary">
+        <a class="nav-link" href="Dropdowns-Collapse.html">Dropdowns<br>& Collapse</a>
+      </li>
+      <li class="nav-item border border-secondary">
+        <a class="nav-link" href="Flex.html">Flex</a>
+      </li>
+      <li class="nav-item border border-secondary">
+        <a class="nav-link" href="Forms-CustomForms.html">Forms &<br>CustomForms</a>
+      </li>
+      <li class="nav-item border border-secondary">
+        <a class="nav-link" href="Icons.html">Icons</a>
+      </li>
+      <li class="nav-item border border-secondary">
+        <a class="nav-link" href="Images-Jumbotron.html">Images &<br>Jumbotron</a>
+      </li>
+    </ul>
+    <ul class="navbar-nav small d-flex flex-wrap justify-content-center">
+      <li class="nav-item border border-secondary">
+        <a class="nav-link" href="Inputs-InputGroups.html">Inputs &<br>InputGroups</a>
+      </li>
+      <li class="nav-item border border-secondary">
+        <a class="nav-link" href="ListGroups-MediaObjects.html">ListGroups &<br>MediaObjects</a>
+      </li>
+      <li class="nav-item border border-secondary">
+        <a class="nav-link" href="Modal-Tooltip.html">Modal &<br>Tooltip</a>
+      </li>
+      <li class="nav-item border border-secondary">
+        <a class="nav-link" href="Navs-Navbar.html">Navs &<br>Navbar</a>
+      </li>
+      <li class="nav-item border border-secondary">
+        <a class="nav-link" href="Popover-Toast.html">Popover<br>& Toast</a>
+      </li>
+      <li class="nav-item border border-secondary">
+        <a class="nav-link" href="Scrollspy1.html">Scrollspy 1</a>
+      </li>
+      <li class="nav-item border border-secondary">
+        <a class="nav-link" href="Scrollspy2.html">Scrollspy 2</a>
+      </li>
+      <li class="nav-item border border-secondary">
+        <a class="nav-link" href="Spinners-Pagination.html">Spiners &<br>Pagination</a>
+      </li>
+      <li class="nav-item border border-secondary">
+        <a class="nav-link" href="Typography.html">Typography</a>
+      </li>
+      <li class="nav-item border border-secondary">
+        <a class="nav-link" href="Utilities.html">Utilities</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="spacer" style="height: 50px;"></div>
+  
+<div class="container">
+  <h1>My First Bootstrap Page</h1>
+  <p>This part is inside a .container class.</p> 
+  <p>The .container class provides a responsive fixed width container.</p>
+  <p>Resize the browser window to see that its width (max-width) will change at different breakpoints.</p>
+</div>
+
+<!--=================================================================================================-->
+<hr style="width:90%; margin-top: 50px; margin-bottom: 50px; background-color: aquamarine;">
+<!--=================================================================================================-->
+
+<div class="container-fluid">
+  <h1>My First Bootstrap Page</h1>
+  <p>This part is inside a .container-fluid class.</p>
+  <p>The .container-fluid class provides a full width container, spanning the entire width of the viewport.</p>           
+</div>
+
+<!--=================================================================================================-->
+<hr style="width:90%; margin-top: 50px; margin-bottom: 50px; background-color: aquamarine;">
+<!--=================================================================================================-->
+
+<div class="container pt-3">
+  <h1>My First Bootstrap Page</h1>
+  <p>This container has a top padding of 16 pixels (.pt-3).</p>
+  <p>Try to remove the .pt-3 class to see the difference.</p>
+</div>
+
+<!--=================================================================================================-->
+<hr style="width:90%; margin-top: 50px; margin-bottom: 50px; background-color: aquamarine;">
+<!--=================================================================================================-->
+
+<div class="container p-3 my-3 border">
+  <h1>My First Bootstrap Page</h1>
+  <p>This container has a border and some extra padding and margins.</p>
+</div>
+
+<div class="container p-3 my-3 bg-dark text-white">
+  <h1>My First Bootstrap Page</h1>
+  <p>This container has a dark background color and a white text, and some extra padding and margins.</p>
+</div>
+
+<div class="container p-3 my-3 bg-primary text-white">
+  <h1>My First Bootstrap Page</h1>
+  <p>This container has a blue background color and a white text, and some extra padding and margins.</p>
+</div>
+
+<!--=================================================================================================-->
+<hr style="width:90%; margin-top: 50px; margin-bottom: 50px; background-color: aquamarine;">
+<!--=================================================================================================-->
+
+<div class="container">
+  <h1>Responsive Containers</h1>
+  <p>Resize the browser window to see the effect.</p>
+</div>
+
+<div class="container-sm border">.container-sm</div>
+<div class="container-md mt-3 border">.container-md</div>
+<div class="container-lg mt-3 border">.container-lg</div>
+<div class="container-xl mt-3 border">.container-xl</div>
+
+<!--=================================================================================================-->
+<hr style="width:90%; margin-top: 50px; margin-bottom: 50px; background-color: aquamarine;">
+<!--=================================================================================================-->
+
+<div class="container-fluid">
+  <h1>Three equal width columns</h1>
+  <p>Note: Try to add a new div with class="col" inside the row class - this will create three equal-width columns.</p>
+  <div class="row">
+    <div class="col-sm-1" style="background-color:lavender;">.col</div>
+    <div class="col-sm-1" style="background-color:orange;">.col</div>
+    <div class="col-sm-1" style="background-color:lavender;">.col</div>
+	<div class="col-sm-1" style="background-color:orange;">.col</div>
+	<div class="col-sm-1" style="background-color:lavender;">.col</div>
+    <div class="col-sm-1" style="background-color:orange;">.col</div>
+    <div class="col-sm-1" style="background-color:lavender;">.col</div>
+	<div class="col-sm-1" style="background-color:orange;">.col</div>
+	<div class="col-sm-1" style="background-color:lavender;">.col</div>
+    <div class="col-sm-1" style="background-color:orange;">.col</div>
+    <div class="col-sm-1" style="background-color:lavender;">.col</div>
+	<div class="col-sm-1" style="background-color:orange;">.col</div>
+	
+    <div class="col-sm-2" style="background-color:lavender;">.col</div>
+	<div class="col-sm-2" style="background-color:orange;">.col</div>
+	<div class="col-sm-2" style="background-color:lavender;">.col</div>
+    <div class="col-sm-2" style="background-color:orange;">.col</div>
+    <div class="col-sm-2" style="background-color:lavender;">.col</div>
+	<div class="col-sm-2" style="background-color:orange;">.col</div>
+	
+    <div class="col-sm-3" style="background-color:orange;">.col</div>
+    <div class="col-sm-3" style="background-color:lavender;">.col</div>
+	<div class="col-sm-3" style="background-color:orange;">.col</div>
+	<div class="col-sm-3" style="background-color:lavender;">.col</div>
+	
+	<div class="col-sm-4" style="background-color:lavender;">.col</div>
+    <div class="col-sm-4" style="background-color:orange;">.col</div>
+    <div class="col-sm-4" style="background-color:lavender;">.col</div>
+		
+	<div class="col-sm-6" style="background-color:lavender;">.col</div>
+	<div class="col-sm-6" style="background-color:orange;">.col</div>
+	
+	<div class="col-sm-12" style="background-color:lavender;">.col</div>
+	
+  </div>
+</div>
+
+<!--=================================================================================================-->
+<hr style="width:90%; margin-top: 50px; margin-bottom: 50px; background-color: aquamarine;">
+<!--=================================================================================================-->
+
+<div class="container-fluid">
+  <h1>Responsive Columns</h1>
+  <p>Resize the browser window to see the effect.</p>
+  <p>The columns will automatically stack on top of each other when the screen is less than 576px wide.</p>
+  <div class="row">
+    <div class="col-sm-3" style="background-color:lavender;">.col-sm-3</div>
+    <div class="col-sm-3" style="background-color:lavenderblush;">.col-sm-3</div>
+    <div class="col-sm-3" style="background-color:lavender;">.col-sm-3</div>
+    <div class="col-sm-3" style="background-color:lavenderblush;">.col-sm-3</div>
+  </div>
+</div>
+
+<!--=================================================================================================-->
+<hr style="width:90%; margin-top: 50px; margin-bottom: 50px; background-color: aquamarine;">
+<!--=================================================================================================-->
+
+<div class="container-fluid">
+  <h1>Two Unequal Responsive Columns</h1>
+  <p>Resize the browser window to see the effect.</p>
+  <p>The columns will automatically stack on top of each other when the screen is less than 576px wide.</p>
+  <div class="row">
+    <div class="col-sm-4" style="background-color:lavender;">.col-sm-4</div>
+    <div class="col-sm-8" style="background-color:lavenderblush;">.col-sm-8</div>
+  </div>
+</div>
+
+<!--=================================================================================================-->
+<hr style="width:90%; margin-top: 50px; margin-bottom: 50px; background-color: aquamarine;">
+<!--=================================================================================================-->
+
+</body>
+</html>
